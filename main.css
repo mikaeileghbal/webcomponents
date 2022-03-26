@@ -1,0 +1,32 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  --pink: #f96e8d;
+  --navy: #0b1236;
+  --header-back: #343951;
+}
+
+header {
+  background-color: var(--header-back);
+  padding: 20px 0;
+}
+
+.attention {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid var(--pink);
+  background-color: var(--navy);
+  border-radius: 25px;
+  color: white;
+  padding: 0px 2px 0 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attention > span {
+  color: var(--pink);
+  margin: 0 4px;
+}
+/*# sourceMappingURL=main.css.map */
