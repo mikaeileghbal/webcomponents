@@ -8,11 +8,19 @@
 		<title>Document</title>
 	</head>
 	<body>
+		<template id="test-template">
+			<h1>Slot test</h1>
+			<p>
+				<slot name="item">NAME</slot>
+				<slot name="description">DESCRIPTION</slot>
+			</p>
+		</template>
+
 		<header>
 			<div class="container">
-				<a href="">Web Comps</a>
+				<a href="">Web Components</a>
 				<div class="attention">
-					You are<span>not visible</span>to companies
+					What is<span>web component</span>in web techlogies
 					<popup-info
 						style="margin-top: 3px; margin-left: 6px"
 						img="/images/info.png"
@@ -23,10 +31,10 @@
 				</div>
 				<nav>
 					<ul>
+						<li><a href="">Home</a></li>
 						<li><a href="">dashboard</a></li>
 						<li><a href="">profile</a></li>
 						<li><a href="">interview</a></li>
-						<li><a href="">Home</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -38,6 +46,23 @@
 			repudiandae quis ratione laborum suscipit accusantium omnis! Nam.
 		</p>
 
+		<test-item>
+			<h3 slot="item">Item Name 1</h3>
+			<p slot="description">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, illum.
+			</p>
+		</test-item>
+		<test-item>
+			<h3 slot="item">Item Name 2</h3>
+			<ul slot="description">
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+				<li>Item 4</li>
+				<li>Item 5</li>
+				<li>Item 6</li>
+			</ul>
+		</test-item>
 		<script src="index.js" type="module"></script>
 	</body>
 </html>

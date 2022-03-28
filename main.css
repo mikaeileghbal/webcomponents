@@ -1,9 +1,18 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   --pink: #f96e8d;
   --navy: #0b1236;
   --header-back: #343951;
+  --gray: #eef3f6;
+  --link: #adafb9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 1em sans-serif;
+  background-color: var(--gray);
 }
 
 header {
@@ -11,10 +20,49 @@ header {
   padding: 20px 0;
 }
 
+header .container {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--link);
+  margin: 0 16px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: white;
+}
+
 .attention {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  font-size: 80%;
+  letter-spacing: 0.4px;
+  font-weight: 600;
   border: 1px solid var(--pink);
   background-color: var(--navy);
   border-radius: 25px;
@@ -23,6 +71,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
+  margin-right: 16px;
 }
 
 .attention > span {
